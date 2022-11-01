@@ -1,5 +1,6 @@
-<div class="list-group">
-    <a href="#" class="list-group-item">Component 1</a>
-    <a href="#" class="list-group-item">Component 2</a>
-    <a href="#" class="list-group-item">Component 3</a>
+<a href="product" class="list-group-item"  style="background-color: rgb(157, 190, 252);">View all Products</a>
+
+<div class="list-group" *ngFor="let catg of categoryList">
+    <a href="product/category{{catg.id}}" class="list-group-item" >{{catg.categoryName}}</a>
 </div>
+    
